@@ -1,0 +1,52 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f8f6; color: #1a1a1a; }
+
+.navbar { background: #fff; border-bottom: 0.5px solid #e0e0e0; padding: 0 32px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 22px; font-weight: 700; color: #1a1a1a; letter-spacing: -0.5px; }
+.logo span { color: #378ADD; }
+.nav-links { display: flex; gap: 24px; font-size: 14px; }
+.nav-links a { text-decoration: none; color: #666; }
+.nav-links a:hover { color: #378ADD; }
+
+.hero { background: #fff; padding: 56px 32px 44px; text-align: center; border-bottom: 0.5px solid #e0e0e0; }
+.hero h1 { font-size: 36px; font-weight: 700; color: #1a1a1a; margin-bottom: 10px; letter-spacing: -1px; }
+.hero p { font-size: 16px; color: #666; margin-bottom: 28px; }
+
+.search-bar { display: flex; max-width: 620px; margin: 0 auto; background: #fff; border: 2px solid #378ADD; border-radius: 12px; overflow: hidden; }
+.search-bar input { flex: 1; border: none; outline: none; padding: 14px 20px; font-size: 15px; color: #1a1a1a; background: transparent; }
+.search-bar button { background: #378ADD; color: #fff; border: none; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+.search-bar button:hover { background: #185FA5; }
+.search-bar button:disabled { background: #aaa; cursor: not-allowed; }
+
+.stats { display: flex; justify-content: center; gap: 48px; margin-top: 32px; }
+.stat-num { font-size: 24px; font-weight: 700; color: #378ADD; }
+.stat-label { font-size: 12px; color: #999; margin-top: 2px; }
+
+.section { max-width: 800px; margin: 0 auto; padding: 32px 24px; }
+
+.error-bar { background: #FCEBEB; border: 0.5px solid #F09595; color: #A32D2D; padding: 14px 20px; border-radius: 10px; margin-bottom: 20px; font-size: 14px; }
+
+.loading-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 40px; text-align: center; }
+.loading-card p { color: #666; font-size: 14px; margin-top: 16px; }
+.spinner { width: 32px; height: 32px; border: 3px solid #e0e0e0; border-top-color: #378ADD; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.product-result { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 28px; margin-bottom: 20px; }
+.product-store-badge { display: inline-block; background: #E6F1FB; color: #185FA5; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+.product-title { font-size: 20px; font-weight: 600; color: #1a1a1a; margin-bottom: 12px; line-height: 1.4; }
+.product-price { font-size: 36px; font-weight: 700; color: #1a1a1a; margin-bottom: 20px; }
+.btn-view { display: inline-block; background: #378ADD; color: #fff; text-decoration: none; padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+.btn-view:hover { background: #185FA5; }
+
+.chart-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+.chart-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: #1a1a1a; }
+
+.alert-bar { background: #E6F1FB; border: 0.5px solid #B5D4F4; border-radius: 12px; padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.alert-bar-text h3 { font-size: 15px; font-weight: 600; color: #0C447C; }
+.alert-bar-text p { font-size: 13px; color: #185FA5; margin-top: 4px; }
+.alert-inputs { display: flex; gap: 10px; flex-wrap: wrap; }
+.alert-inputs input { border: 1px solid #B5D4F4; border-radius: 8px; padding: 9px 14px; font-size: 14px; width: 180px; outline: none; background: #fff; }
+.alert-inputs button { background: #378ADD; color: #fff; border: none; border-radius: 8px; padding: 9px 18px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.alert-inputs button:hover { background: #185FA5; }
+
+.alert-success { background: #EAF3DE; border: 0.5px solid #C0DD97; color: #3B6D11; padding: 16px 20px; border-radius: 10px; font-size: 14px; font-weight: 500; }

@@ -21,14 +21,8 @@ export default function App() {
     setHistory([]);
 
     try {
-      const res = await axios.post("http://localhost:3000/scrape", { url });
-      setProduct(res.data.product);
-
-      const histRes = await axios.get(`http://localhost:3000/products/${res.data.id}`);
-      setHistory(histRes.data.history.map((h, i) => ({
-        name: `Check ${histRes.data.history.length - i}`,
-        price: parseInt(h.price.replace(/[₹,]/g, "")) || 0
-      })).reverse());
+     const res = await axios.post("https://trackit-backend-whr8.onrender.com/scrape", { url });
+const histRes = await axios.get(`https://trackit-backend-whr8.onrender.com/products/${res.data.id}`);
 
     } catch (e) {
       setError("Failed to fetch product. Please check the URL and try again.");
